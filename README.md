@@ -1,2 +1,2 @@
 # Personal-Express-Project
-This repo contains Express js project with mongodb as database. (Auth, Products)
+This repo contains the Express js project with Mongodb as a database. (Auth, Products)
