@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "238cfca5-8a02-48d9-b1f7-54c598c4b705",
+		"_postman_id": "1f3801f1-93d6-492d-941a-f90b8d07ea40",
 		"name": "New Collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30664128"
 	},
 	"item": [
 		{
@@ -35,6 +36,35 @@
 							"path": [
 								"auth",
 								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"Test1234!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"login"
 							]
 						}
 					},
