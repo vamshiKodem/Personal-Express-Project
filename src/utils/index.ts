@@ -1,2 +1,2 @@
 export { generateSalt } from "./salt";
-export { dbConnection } from "./dataBaseConnection";
+export { connectDataBase } from "./dataBaseConnection";
