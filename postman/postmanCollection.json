@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "1f3801f1-93d6-492d-941a-f90b8d07ea40",
+		"_postman_id": "b5fc86ff-b6c1-40ff-b251-0cb014b0dff9",
 		"name": "New Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30664128"
+		"_exporter_id": "33471420"
 	},
 	"item": [
 		{
@@ -27,12 +27,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/auth/users",
+							"raw": "http://localhost:6000/auth/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"auth",
 								"users"
@@ -56,12 +56,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/auth/login",
+							"raw": "http://localhost:6000/auth/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"auth",
 								"login"
@@ -85,15 +85,49 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/auth/create",
+							"raw": "http://localhost:6000/auth/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"auth",
 								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pushNotification",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"Test1234!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"auth",
+								"login"
 							]
 						}
 					},
@@ -122,12 +156,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/products",
+							"raw": "http://localhost:6000/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"products"
 							]
@@ -150,12 +184,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/products/6256667c8c1e814075b76596",
+							"raw": "http://localhost:6000/products/6256667c8c1e814075b76596",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"products",
 								"6256667c8c1e814075b76596"
@@ -179,12 +213,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/products",
+							"raw": "http://localhost:6000/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"products"
 							]
@@ -207,12 +241,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/products/6256636f03e3aa6d4b69dd24",
+							"raw": "http://localhost:6000/products/6256636f03e3aa6d4b69dd24",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"products",
 								"6256636f03e3aa6d4b69dd24"
@@ -239,12 +273,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/products",
+							"raw": "http://localhost:6000/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5000",
+							"port": "6000",
 							"path": [
 								"products"
 							]
