@@ -16,6 +16,9 @@ export const sendPushNotificationController = async (
         body: body.body,
         title: body.title,
       },
+      data: {
+        navigationId: body.navigationId,
+      },
     });
     return res.status(200).send("Push Notification is Send Successfully");
   } catch (err) {

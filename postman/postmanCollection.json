@@ -111,7 +111,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"Test1234!\"\r\n}",
+							"raw": "{\r\n  \"token\": \"fbcbIlP5RHiykT2KL6PFbD:APA91bF92EOdUDJEIN2ZVhl7ss6GHpsfv5ZDM1WLamCJmcb7bFRCrMqFP-ZrPXBb5gh3QHHAkG0BGLLTv8PLc7YBelz8w2Gx5PKZ1EvvM0X8kx4xuBGjKKzY_1XBFtntwfJzk2hzFpSK\",\r\n  \"body\": \"some body text\",\r\n  \"title\": \"some title\",\r\n  \"navigationId\": \"profile\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -119,15 +119,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:6000/auth/login",
+							"raw": "http://localhost:6000/pushNotification/send",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "6000",
 							"path": [
-								"auth",
-								"login"
+								"pushNotification",
+								"send"
 							]
 						}
 					},
