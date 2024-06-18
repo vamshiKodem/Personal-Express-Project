@@ -9,6 +9,10 @@ export const sendPushNotificationController = async (
 ) => {
   const body: SendPushNotification = req.body;
 
+  if (!body.body || !body.navigationId || !body.title || !body.token) {
+    return res.status(400).send(`missing the requred request items ${body}`);
+  }
+
   try {
     await adminFirebase.messaging().send({
       token: body.token,
