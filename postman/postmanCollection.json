@@ -105,7 +105,7 @@
 			"name": "pushNotification",
 			"item": [
 				{
-					"name": "login",
+					"name": "pushNotification",
 					"request": {
 						"method": "POST",
 						"header": [],
