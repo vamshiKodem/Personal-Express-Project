@@ -7,25 +7,32 @@ export const sendPushNotificationController = async (
   req: Request,
   res: Response
 ) => {
-  const body: SendPushNotification = req.body;
+  const requestBody: SendPushNotification = req.body;
 
-  if (!body.body || !body.navigationId || !body.title || !body.token) {
-    return res.status(400).send(`missing the requred request items ${body}`);
+  if (
+    !requestBody.body ||
+    !requestBody.navigationId ||
+    !requestBody.title ||
+    !requestBody.token
+  ) {
+    return res
+      .status(400)
+      .send(`missing the required request items ${requestBody}`);
   }
 
   try {
     await adminFirebase.messaging().send({
-      token: body.token,
+      token: requestBody.token,
       notification: {
-        body: body.body,
-        title: body.title,
+        body: requestBody.body,
+        title: requestBody.title,
       },
       data: {
-        navigationId: body.navigationId,
+        navigationId: requestBody.navigationId,
       },
     });
     return res.status(200).send("Push Notification is Send Successfully");
   } catch (err) {
-    return res.status(404).send(`${err} `);
+    return res.status(404).send(`${err}`);
   }
 };
